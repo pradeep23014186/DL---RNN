@@ -11,10 +11,12 @@ The problem addressed in this project is to design and implement a Recurrent Neu
 This project aims to demonstrate how Deep Learning, specifically RNN architecture, can be used to model sequential patterns, reduce prediction errors, and provide an effective solution for real-world forecasting problems such as stock market analysis, demand prediction, and trend estimation.
 
 ### Train Dataset:
-![alt text](Output-img/train.png)
+<img width="788" height="447" alt="train" src="https://github.com/user-attachments/assets/f39d8e47-1dc4-4895-9e19-ce40af110985" />
+
 
 ### Test Dataset:
-![alt text](Output-img/test.png)
+<img width="838" height="446" alt="test" src="https://github.com/user-attachments/assets/4ba680d3-aadb-4309-b954-f99ae1e27ca0" />
+
 
 ## DESIGN STEPS
 ### STEP 1: 
@@ -41,9 +43,9 @@ Display the prediction.
 
 ## PROGRAM
 
-### Name: Krishna Prasad S
+### Name: Pradeep Kumar G
 
-### Register Number: 212223230108
+### Register Number: 212223230150
 
 ```python
 # Define RNN Model
@@ -77,8 +79,8 @@ def train_model(model, train_loader, criterion, optimizer, epochs=20):
     train_losses.append(total_loss / len(train_loader))
     print(f'Epoch [{epoch+1}/{epochs}], Loss: {total_loss / len(train_loader) :.4f}')
   # Plot training loss
-  print('Name: Krishna Prasad S')
-  print('Register Number: 212223230108')
+  print('Name: Pradeep Kumar G')
+  print('Register Number: 212223230150')
   plt.plot(train_losses, label='Training Loss')
   plt.xlabel('Epoch')
   plt.ylabel('MSE Loss')
@@ -92,13 +94,16 @@ def train_model(model, train_loader, criterion, optimizer, epochs=20):
 ### OUTPUT
 
 ## Training Loss Over Epochs Plot
-![alt text](Output-img/loss.png)
+<img width="727" height="612" alt="image" src="https://github.com/user-attachments/assets/46beec33-fb91-42bc-b6b2-b58d9c81c99b" />
+
 
 ## True Stock Price, Predicted Stock Price vs time
-![alt text](Output-img/output.png)
+<img width="1081" height="738" alt="image" src="https://github.com/user-attachments/assets/65d6ecaf-a9e4-4ae8-9ca6-4c0cf1035b2c" />
+
 
 ### Predictions
-![alt text](Output-img/output-2.png)
+<img width="279" height="56" alt="image" src="https://github.com/user-attachments/assets/3ac7be2c-9f36-4439-8274-5f25c5457049" />
+
 
 ## RESULT
 Thus, a Recurrent Neural Network (RNN) model for predicting stock prices using historical closing price data has been developed successfully.
